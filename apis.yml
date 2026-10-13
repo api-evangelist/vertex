@@ -1,23 +1,112 @@
 aid: vertex
+
 name: Vertex
-description: 'Vertex is a company surfaced via the API Evangelist harvest backlog (source: tag-qc) and
-  added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.vertexinc.com/sites/default/files/styles/1_91_1_ratio_for_social_media_sharing/public/2025-05/marketeture-homepage-hero-lg.png?itok=AUYSkhPk
+
+description: Vertex Inc. provides tax technology software and solutions that help businesses automate global tax compliance, calculate taxes,
+  and manage tax data across multiple jurisdictions. Their platform integrates with ERP, e‑commerce, and financial systems, offering APIs for
+  tax calculation, filing, and reporting, enabling enterprises to streamline tax processes and reduce compliance risk.
+
 url: https://raw.githubusercontent.com/api-evangelist/vertex/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:tag-qc
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-13 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-13'
+
 modified: '2026-10-13'
+
 tags:
 - Company
-apis: []
+- Tax
+- Compliance
+- API
+- Automation
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Spectral
+  url: rules/vertex-rules.yml
+- type: JSONLD
+  url: json-ld/vertex-context.jsonld
+- type: Vocabulary
+  url: vocabulary/vertex-vocabulary.yml
+- type: DataModel
+  url: data-model/vertex-data-model.yml
+- type: Compliance
+  url: https://trust.vertexinc.com/
+- type: Conformance
+  url: conformance/vertex-conformance.yml
+- type: LLMsTxt
+  url: llms/vertex-llms.txt
+- type: SecurityTxt
+  url: well-known/vertex-status-security.txt
+- type: WellKnown
+  url: well-known/vertex-well-known.yml
+- type: Hosts
+  url: hosts/vertex-hosts.yml
+- type: Vendors
+  url: vendors/vertex-vendors.yml
+- type: StatusPage
+  url: https://status.vertexinc.com/
+- type: Newsroom
+  url: https://www.vertexinc.com/company/news/latest-news
+- type: GitHubOrganization
+  url: https://github.com/vertexinc
+- type: TrustCenter
+  url: security/vertex-trust-center.yml
+- type: DomainSecurity
+  url: security/vertex-domain-security.yml
 - type: Website
   url: https://www.vertexinc.com/
+- type: Documentation
+  url: https://developer.vertexinc.com/
+- type: APIReference
+  url: https://developer.vertexinc.com/
+- type: Support
+  url: https://www.vertexinc.com/contact-us
+- type: TermsOfService
+  url: https://www.vertexinc.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.vertexinc.com/vertex-privacy-policy
+
+apis:
+- aid: vertex:vertex-api
+  name: Vertex API
+  description: 'Vertex API as documented publicly: 23 operations. Contract generated from the documentation by API Evangelist (2026-10-13); not
+    the provider''s own document.'
+  humanURL: https://developer.vertexinc.com/vat-compliance/docs/upload-customer-data-files
+  baseURL: https://dash.readme.com
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/vertex-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/vertex-get-problems-problemid-response-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Developer portal pages are rendered via JavaScript and do not expose a machine‑readable OpenAPI spec.
+  evidence:
+  - url: https://developer.vertexinc.com/
+    status: 200
+  checked: '2026-10-13'
+x-enrichment:
+  date: '2026-10-13'
+  status: enriched
+  artifacts_added: 20
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

@@ -1,0 +1,137 @@
+generated: '2026-10-13'
+method: derived
+generator: derive-mcp-candidate.py
+source:
+- openapi/_ae-authored/vertex-openapi-generated.yml
+status: candidate
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+note: 'No MCP server was found. The pre-flight posted tools/list to /mcp on api.vertexinc.com, www.vertexinc.com, community.vertexinc.com, developer.vertexinc.com;
+  verdict gated (https://developer.vertexinc.com/mcp answered 401: the edge authenticates before it routes, which proves nothing either way).
+  Candidate tools below are derived from the 23 operation(s) in the provider''s own OpenAPI (23 listed); they describe what a server WOULD expose,
+  not one that exists.'
+tools:
+- name: get
+  operationId: get
+  method: GET
+  path: /
+  description: GET /
+- name: delete_api_v1_reports_results_reportresultid
+  operationId: delete_api_v1_reports_results_reportresultid
+  method: DELETE
+  path: /api/v1/reports/results/{reportresultid}
+  description: Hard-delete a report result and its generated artifact. The operation is idempotent and returns a 204 HTTP status code when the
+    result has already been deleted.
+- name: get_api_v1_reports_results_reportresultid
+  operationId: get_api_v1_reports_results_reportresultid
+  method: GET
+  path: /api/v1/reports/results/{reportresultid}
+  description: Retrieve full metadata for a single report result by its ID, including pre-signed download URL.
+- name: post_api_v1_reports_results_reportresultid_cancel
+  operationId: post_api_v1_reports_results_reportresultid_cancel
+  method: POST
+  path: /api/v1/reports/results/{reportresultid}/cancel
+  description: Request cancelation of a report result that is currently PENDING or PROCESSING. The operation is idempotent — repeating it for
+    an already-canceled result return
+- name: get_api_v1_reports_definitionid_results_reportresultid
+  operationId: get_api_v1_reports_definitionid_results_reportresultid
+  method: GET
+  path: /api/v1/reports/{definitionid}/results/{reportresultid}
+  description: Retrieve full metadata for a single report result, including pre-signed download URLs.
+- name: delete_api_v1_reports_reportid
+  operationId: delete_api_v1_reports_reportid
+  method: DELETE
+  path: /api/v1/reports/{reportid}
+  description: Soft-delete a report definition by moving it to ARCHIVED status. Archiving a report deactivates all of its schedules. Archived
+    reports remain readable but can n
+- name: get_api_v1_reports_reportid
+  operationId: get_api_v1_reports_reportid
+  method: GET
+  path: /api/v1/reports/{reportid}
+  description: Retrieve full metadata for a single report definition.
+- name: put_api_v1_reports_reportid
+  operationId: put_api_v1_reports_reportid
+  method: PUT
+  path: /api/v1/reports/{reportid}
+  description: Update an existing saved report definition. Only the report name plus DATA_EXTRACT filters/fields/settings or STANDARD_REPORT parameters
+    can be changed.
+- name: post_api_v1_reports_reportid_results
+  operationId: post_api_v1_reports_reportid_results
+  method: POST
+  path: /api/v1/reports/{reportid}/results
+  description: Execute a report definition and create a new report result. The report is executed asynchronously, and the generated report result
+    metadata is returned.
+- name: delete_api_v1_reports_reportid_schedules
+  operationId: delete_api_v1_reports_reportid_schedules
+  method: DELETE
+  path: /api/v1/reports/{reportid}/schedules
+  description: Delete all schedules associated with a specific report definition.
+- name: delete_api_v1_reports_reportid_schedules_scheduleid
+  operationId: delete_api_v1_reports_reportid_schedules_scheduleid
+  method: DELETE
+  path: /api/v1/reports/{reportid}/schedules/{scheduleid}
+  description: Delete a specific schedule associated with a given report definition. The schedule must belong to the specified report definition.
+- name: get_api_v1_reports_reportid_id
+  operationId: get_api_v1_reports_reportid_id
+  method: GET
+  path: /api/v1/reports/{reportid}/{id}
+  description: Retrieve all report results generated for a specific report definition, with optional filters for status, name, and creation date
+    range.
+- name: delete_api_v1_schedules_scheduleid
+  operationId: delete_api_v1_schedules_scheduleid
+  method: DELETE
+  path: /api/v1/schedules/{scheduleid}
+  description: Delete or permanently disable a schedule.
+- name: get_api_v1_schedules_scheduleid
+  operationId: get_api_v1_schedules_scheduleid
+  method: GET
+  path: /api/v1/schedules/{scheduleid}
+  description: Retrieve full metadata for a single schedule.
+- name: put_api_v1_schedules_scheduleid
+  operationId: put_api_v1_schedules_scheduleid
+  method: PUT
+  path: /api/v1/schedules/{scheduleid}
+  description: Update an existing schedule. All updatable fields are replaced with the values provided in the request.
+- name: get_api_v1_templates_templateid
+  operationId: get_api_v1_templates_templateid
+  method: GET
+  path: /api/v1/templates/{templateid}
+  description: Retrieve a single template definition.
+- name: get_api_v1_v1id
+  operationId: get_api_v1_v1id
+  method: GET
+  path: /api/v1/{v1id}
+  description: Retrieve a list of report definitions, optionally filtered by template, category, name, and creation date.
+- name: post_api_v1_v1id
+  operationId: post_api_v1_v1id
+  method: POST
+  path: /api/v1/{v1id}
+  description: Create a new saved report definition based on an existing template. DATA_EXTRACT requests provide filters and field configurations,
+    while STANDARD_REPORT reques
+- name: get_documents_url
+  operationId: get_documents_url
+  method: GET
+  path: /documents/url
+  description: GET /documents/url
+- name: get_problems_problemid
+  operationId: get_problems_problemid
+  method: GET
+  path: /problems/{problemid}
+  description: 403 Response example
+- name: get_project_solutionreporting_v1_0_docs_using_the_solution_r
+  operationId: get_project_solutionreporting_v1_0_docs_using_the_solution_reporting_api
+  method: GET
+  path: /project/solutionreporting/v1.0/docs/using-the-solution-reporting-api
+  description: GET /project/solutionreporting/v1.0/docs/using-the-solution-reporting-api
+- name: get_project_vat_compliance_v1_0_docs_upload_customer_data_fi
+  operationId: get_project_vat_compliance_v1_0_docs_upload_customer_data_files
+  method: GET
+  path: /project/vat-compliance/v1.0/docs/upload-customer-data-files
+  description: GET /project/vat-compliance/v1.0/docs/upload-customer-data-files
+- name: get_vertex_ws_v2_supplies
+  operationId: get_vertex_ws_v2_supplies
+  method: GET
+  path: /vertex-ws/v2/supplies
+  description: GET /vertex-ws/v2/supplies

@@ -1,0 +1,41 @@
+# Vertex Inc. LLMS.txt - Enterprise Tax Compliance Solutions
+# Last updated: 2025-02-26
+
+# Core Tax Automation Solutions - Enterprise Technology
+https://www.vertexinc.com/solutions/ecommerce-tax-software: ecommerce sales tax software, sales tax software for ecommerce, ecommerce sales tax solution, best software for ecommerce website
+https://www.vertexinc.com/solutions/e-invoicing: e-invoicing software, automated invoicing software, electronic invoicing solutions, electronic invoice processing, e-invoicing service
+https://www.vertexinc.com/solutions/tax-process/global-taxcompliance-reporting: global tax compliance software, digital tax reporting compliance, outsourced tax compliance service, cross-border tax compliance automation
+https://www.vertexinc.com/solutions/products/vertex-accelerator-for-oracle-cloud-erp: Oracle Cloud ERP tax integration, fast ROI tax setup Oracle ERP, automate tax engine in Oracle ERP, real time tax engine monitoring Oracle
+https://www.vertexinc.com/solutions/tax-process/taxcalc-global-tax-determination: global tax determination software, real time indirect tax calculation, enterprise tax determination platform, cloud and on-premise tax determination
+https://www.vertexinc.com/solutions/tax-process/taxinsight-data: how to automate tax data analysis, best tools for indirect tax reporting, tax audit readiness tools, tax reporting platform, tax process optimization
+https://www.vertexinc.com/en-gb/solutions/ecommerce-tax-software: ecommerce sales tax software, sales tax software for ecommerce, ecommerce sales tax solution, best software for ecommerce website
+https://www.vertexinc.com/solutions/products: tax software products, returns & reporting software, real-time tax accuracy product, indirect tax solution, global compliance tax product
+
+# Implementation & Integration Expertise
+https://www.vertexinc.com/partners/sap: how to automate VAT/GST tax in SAP S/4HANA, SAP tax automation solution, integrated tax compliance SAP, global VAT GST tax for SAP, indirect tax software for SAP
+https://www.vertexinc.com/partners/microsoft: automated tax compliance in Microsoft Dynamics, Dynamics 365 Commerce tax engine, Microsoft validated indirect tax software
+https://www.vertexinc.com/streamline-tax-compliance-vertex-integrations-sap-s4hana: Vertex tax compliance SAP S/4HANA integration features, SAP tax automation software enterprise, Benefits of real-time VAT calculation, Improving tax accuracy in SAP S/4HANA, Managing VAT GST and SUT in SAP S/4HANA
+
+# Enterprise Use Cases & Best Practices
+https://www.vertexinc.com/resources/resource-library/e-invoicing-requirements-what-you-need-know-now: e-invoicing requirements, what you need to know e-invoicing, e-invoicing regulations, e-invoicing vs e-reporting, cross-border e-invoicing
+
+# Regulatory Expertise & Thought Leadership
+https://www.vertexinc.com/resources/resource-library/completing-the-s4hana-picture: SAP S/4HANA indirect tax compliance, tax automation in S/4HANA, business case for tax automation, tax compliance in ERP systems
+https://www.vertexinc.com/business-guide-making-tax-digital: enterprise VAT automation software features, UK VAT digital compliance guide, digital tax record keeping UK VAT, ERP integration MTD tax systems, MTD implementation challenges and solutions
+https://www.vertexinc.com/eu-guide-vat-digital-age-vida: EU VAT digital reporting requirements, EU mandatory e-invoicing ViDA timeline, Digital VAT compliance EU ViDA guide, How to prepare business ERP for EU ViDA compliance
+https://www.vertexinc.com/what-is-e-invoicing: Benefits of e-invoicing for VAT compliance, E-invoicing process automation and ERP integration, Structured invoice formats and taxation compliance, Challenges and best practices for e-invoicing implementation
+https://www.vertexinc.com/making-sense-e-commerce-sales-tax-growing-businesses: e-commerce sales tax compliance challenges, differences between U.S. sales tax and EU VAT for e-commerce, real-time tax rate updates for e-commerce platforms,  integrating tax engines with Shopify Magento and ERP
+https://www.vertexinc.com/practical-guide-indirect-taxes-e-commerce-businesses: e-commerce indirect tax compliance guide, sales tax vs VAT for online sellers, cross-border VAT reporting obligations for e-commerce, global indirect tax strategy for e-commerce businesses, automated tax engine benefits for e-commerce
+
+# Exclude paths with frequently changing data or non-expert content
+Disallow: /company/news/
+Disallow: /company/careers/
+Disallow: /company/our-leadership/
+Disallow: /resources/upcoming-webcasts-events/
+Disallow: /campaign/
+Disallow: /terms-of-use/
+Disallow: /vertex-privacy-policy/
+Disallow: /digital-accessibility-statement/
+Disallow: /cookie-policy/
+Disallow: /modern-slavery-act-statement/
+Disallow: /impressum/

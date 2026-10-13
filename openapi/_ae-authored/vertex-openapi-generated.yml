@@ -1,0 +1,481 @@
+openapi: 3.1.0
+info:
+  title: Vertex API
+  version: '2026-10-13'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-13: 23 operation(s) read from 8 public documentation page(s) (each operation
+    names its page in x-source). This is not the provider''s published contract; Vertex has published no machine-readable contract that the pipeline
+    could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 5
+    documentation: 18
+    pages-with-code: 8
+    pages-read: 8
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-13'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://developer.vertexinc.com/vat-compliance/docs/upload-customer-data-files
+  - https://developer.vertexinc.com/vat-compliance/docs/using-the-vat-compliance-api
+  - https://developer.vertexinc.com/oseries/docs
+  - https://developer.vertexinc.com/oseries/docs/quick-start
+  - https://developer.vertexinc.com/solutionreporting/docs/authentication
+  - https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+  - https://developer.vertexinc.com/smartcategorization/docs/authentication
+  - https://developer.vertexinc.com/smartcategorization/docs/error-handling
+servers:
+- url: https://dash.readme.com
+paths:
+  /:
+    get:
+      operationId: get
+      tags:
+      - Api
+      summary: GET /
+      x-source: https://developer.vertexinc.com/vat-compliance/docs/using-the-vat-compliance-api
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: httpie
+        snippet: 'HTTP https://vat-compliance-service.vertexcloud.com/ '
+  /api/v1/reports/results/{reportresultid}:
+    delete:
+      operationId: delete_api_v1_reports_results_reportresultid
+      tags:
+      - Api
+      summary: Hard-delete a report result and its generated artifact. The operation is idempotent and returns a 204 HTTP status code when the
+        result has already been deleted.
+      x-source: https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+      parameters:
+      - name: reportresultid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_api_v1_reports_results_reportresultid
+      tags:
+      - Api
+      summary: Retrieve full metadata for a single report result by its ID, including pre-signed download URL.
+      x-source: https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+      parameters:
+      - name: reportresultid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v1/reports/results/{reportresultid}/cancel:
+    post:
+      operationId: post_api_v1_reports_results_reportresultid_cancel
+      tags:
+      - Api
+      summary: Request cancelation of a report result that is currently PENDING or PROCESSING. The operation is idempotent — repeating it for
+        an already-canceled result returns 204. Results in COMPLETED or FAILED st
+      x-source: https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+      parameters:
+      - name: reportresultid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v1/reports/{definitionid}/results/{reportresultid}:
+    get:
+      operationId: get_api_v1_reports_definitionid_results_reportresultid
+      tags:
+      - Api
+      summary: Retrieve full metadata for a single report result, including pre-signed download URLs.
+      x-source: https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+      parameters:
+      - name: definitionid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: reportresultid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v1/reports/{reportid}:
+    delete:
+      operationId: delete_api_v1_reports_reportid
+      tags:
+      - Api
+      summary: Soft-delete a report definition by moving it to ARCHIVED status. Archiving a report deactivates all of its schedules. Archived
+        reports remain readable but can no longer be updated or run. The operatio
+      x-source: https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+      parameters:
+      - name: reportid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_api_v1_reports_reportid
+      tags:
+      - Api
+      summary: Retrieve full metadata for a single report definition.
+      x-source: https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+      parameters:
+      - name: reportid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    put:
+      operationId: put_api_v1_reports_reportid
+      tags:
+      - Api
+      summary: Update an existing saved report definition. Only the report name plus DATA_EXTRACT filters/fields/settings or STANDARD_REPORT parameters
+        can be changed.
+      x-source: https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+      parameters:
+      - name: reportid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v1/reports/{reportid}/results:
+    post:
+      operationId: post_api_v1_reports_reportid_results
+      tags:
+      - Api
+      summary: Execute a report definition and create a new report result. The report is executed asynchronously, and the generated report result
+        metadata is returned.
+      x-source: https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+      parameters:
+      - name: reportid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v1/reports/{reportid}/schedules:
+    delete:
+      operationId: delete_api_v1_reports_reportid_schedules
+      tags:
+      - Api
+      summary: Delete all schedules associated with a specific report definition.
+      x-source: https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+      parameters:
+      - name: reportid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v1/reports/{reportid}/schedules/{scheduleid}:
+    delete:
+      operationId: delete_api_v1_reports_reportid_schedules_scheduleid
+      tags:
+      - Api
+      summary: Delete a specific schedule associated with a given report definition. The schedule must belong to the specified report definition.
+      x-source: https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+      parameters:
+      - name: reportid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: scheduleid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v1/reports/{reportid}/{id}:
+    get:
+      operationId: get_api_v1_reports_reportid_id
+      tags:
+      - Api
+      summary: Retrieve all report results generated for a specific report definition, with optional filters for status, name, and creation date
+        range.
+      x-source: https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+      parameters:
+      - name: reportid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 3 example path(s) differing only at id
+  /api/v1/schedules/{scheduleid}:
+    delete:
+      operationId: delete_api_v1_schedules_scheduleid
+      tags:
+      - Api
+      summary: Delete or permanently disable a schedule.
+      x-source: https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+      parameters:
+      - name: scheduleid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_api_v1_schedules_scheduleid
+      tags:
+      - Api
+      summary: Retrieve full metadata for a single schedule.
+      x-source: https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+      parameters:
+      - name: scheduleid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    put:
+      operationId: put_api_v1_schedules_scheduleid
+      tags:
+      - Api
+      summary: Update an existing schedule. All updatable fields are replaced with the values provided in the request.
+      x-source: https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+      parameters:
+      - name: scheduleid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v1/templates/{templateid}:
+    get:
+      operationId: get_api_v1_templates_templateid
+      tags:
+      - Api
+      summary: Retrieve a single template definition.
+      x-source: https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+      parameters:
+      - name: templateid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v1/{v1id}:
+    get:
+      operationId: get_api_v1_v1id
+      tags:
+      - Api
+      summary: Retrieve a list of report definitions, optionally filtered by template, category, name, and creation date.
+      x-source: https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+      parameters:
+      - name: v1id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 3 example path(s) differing only at v1Id
+    post:
+      operationId: post_api_v1_v1id
+      tags:
+      - Api
+      summary: Create a new saved report definition based on an existing template. DATA_EXTRACT requests provide filters and field configurations,
+        while STANDARD_REPORT requests provide parameter values.
+      x-source: https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+      parameters:
+      - name: v1id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at v1Id
+  /documents/url:
+    get:
+      operationId: get_documents_url
+      tags:
+      - Documents
+      summary: GET /documents/url
+      x-source: https://developer.vertexinc.com/vat-compliance/docs/using-the-vat-compliance-api
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: httpie
+        snippet: HTTP https://vat-compliance-service.vertexcloud.com/documents/url Updated 6 days ago What’s Next Upload your data files into
+          VAT Compliance Did this page help you? Yes No URL to access VAT Compliance File Upload API endpoints {"sidebars":{},"apiBaseUrl":"/vat-compliance","baseUrl":"/vat-compliance",
+  /problems/{problemid}:
+    get:
+      operationId: get_problems_problemid
+      tags:
+      - Problems
+      summary: 403 Response example
+      x-source: https://developer.vertexinc.com/smartcategorization/docs/error-handling
+      parameters:
+      - name: problemid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetProblemsProblemidResponse'
+      x-evidence:
+        kind: documentation
+        collapsed_from: 6 example path(s) differing only at problemId
+  /project/solutionreporting/v1.0/docs/using-the-solution-reporting-api:
+    get:
+      operationId: get_project_solutionreporting_v1_0_docs_using_the_solution_reporting_api
+      tags:
+      - Project
+      summary: GET /project/solutionreporting/v1.0/docs/using-the-solution-reporting-api
+      x-source: https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl, Postman, or SDKs). \n API Integration \n To integrate the Solution Reporting API into your application: \n Set up authentication\
+          \ \nUse your credentials to authenticate requests. Include the token in the Authorization header. \n Identify endpoints \nReview available\
+          \ endpoints for report retrieval, scheduling, and management. \n Configure requests \nSend HTTPS requests using your preferred method\
+          \ (suc"
+  /project/vat-compliance/v1.0/docs/upload-customer-data-files:
+    get:
+      operationId: get_project_vat_compliance_v1_0_docs_upload_customer_data_files
+      tags:
+      - Project
+      summary: GET /project/vat-compliance/v1.0/docs/upload-customer-data-files
+      x-source: https://developer.vertexinc.com/vat-compliance/docs/upload-customer-data-files
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl, Postman, or your own integrated program. \n To use cURL from a command prompt, refer to Upload the file to the pre-signed\
+          \ URL . \n To use Postman, attach the file by using Body > Binary > Select File . \n Notify VAT Compliance that the file upload is complete\
+          \ \n Use the VAT Compliance API to complete the upload. \n The required parameter is the virtual reference number (VRN) that the Upload\
+          \ your "
+  /vertex-ws/v2/supplies:
+    get:
+      operationId: get_vertex_ws_v2_supplies
+      tags:
+      - Vertex Ws
+      summary: GET /vertex-ws/v2/supplies
+      x-source: https://developer.vertexinc.com/oseries/docs
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: httpie
+        snippet: 'HTTP https://calcconnect.vertexsmb.com/vertex-ws/v2/supplies '
+components:
+  schemas:
+    GetProblemsProblemidResponse:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Problem type URL
+        title:
+          type: string
+          description: Short title of the problem
+        status:
+          type: integer
+          description: HTTP status code
+        detail:
+          type: string
+          description: Human‑readable description of the error
+        instance:
+          type: string
+          description: Request path that caused the error
+tags:
+- name: Api
+- name: Documents
+- name: Problems
+- name: Project
+- name: Vertex Ws
