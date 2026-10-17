@@ -83,19 +83,102 @@ common:
   url: https://www.vertexinc.com/vertex-privacy-policy
 
 apis:
-- aid: vertex:vertex-api
-  name: Vertex API
-  description: 'Vertex API as documented publicly: 23 operations. Contract generated from the documentation by API Evangelist (2026-10-13); not
-    the provider''s own document.'
+- aid: vertex:vertex-documents-api
+  name: Vertex Documents API
+  description: The Documents API from Vertex — 1 operation(s) for documents.
   humanURL: https://developer.vertexinc.com/vat-compliance/docs/upload-customer-data-files
   baseURL: https://dash.readme.com
+  tags:
+  - Documents
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/vertex-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/vertex-documents-api-openapi.yml
   - type: JSONSchema
     url: json-schema/vertex-get-problems-problemid-response-schema.json
-
+- aid: vertex:vertex-problems-api
+  name: Vertex Problems API
+  description: The Problems API from Vertex — 1 operation(s) for problems.
+  humanURL: https://developer.vertexinc.com/vat-compliance/docs/upload-customer-data-files
+  baseURL: https://dash.readme.com
+  tags:
+  - Problems
+  properties:
+  - type: OpenAPI
+    url: openapi/vertex-problems-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/vertex-get-problems-problemid-response-schema.json
+- aid: vertex:vertex-project-api
+  name: Vertex Project API
+  description: The Project API from Vertex — 2 operation(s) for project.
+  humanURL: https://developer.vertexinc.com/vat-compliance/docs/upload-customer-data-files
+  baseURL: https://dash.readme.com
+  tags:
+  - Project
+  properties:
+  - type: OpenAPI
+    url: openapi/vertex-project-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/vertex-get-problems-problemid-response-schema.json
+- aid: vertex:vertex-reports-api
+  name: Vertex Reports API
+  description: The Reports API from Vertex — 8 operation(s) for reports.
+  humanURL: https://developer.vertexinc.com/vat-compliance/docs/upload-customer-data-files
+  baseURL: https://dash.readme.com
+  tags:
+  - Reports
+  properties:
+  - type: OpenAPI
+    url: openapi/vertex-reports-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/vertex-get-problems-problemid-response-schema.json
+- aid: vertex:vertex-schedules-api
+  name: Vertex Schedules API
+  description: The Schedules API from Vertex — 1 operation(s) for schedules.
+  humanURL: https://developer.vertexinc.com/vat-compliance/docs/upload-customer-data-files
+  baseURL: https://dash.readme.com
+  tags:
+  - Schedules
+  properties:
+  - type: OpenAPI
+    url: openapi/vertex-schedules-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/vertex-get-problems-problemid-response-schema.json
+- aid: vertex:vertex-templates-api
+  name: Vertex Templates API
+  description: The Templates API from Vertex — 1 operation(s) for templates.
+  humanURL: https://developer.vertexinc.com/vat-compliance/docs/upload-customer-data-files
+  baseURL: https://dash.readme.com
+  tags:
+  - Templates
+  properties:
+  - type: OpenAPI
+    url: openapi/vertex-templates-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/vertex-get-problems-problemid-response-schema.json
+- aid: vertex:vertex-vertex-api-api
+  name: Vertex Vertex API
+  description: The Vertex API API from Vertex — 2 operation(s) for vertex api.
+  humanURL: https://developer.vertexinc.com/vat-compliance/docs/upload-customer-data-files
+  baseURL: https://dash.readme.com
+  tags:
+  - Vertex API
+  properties:
+  - type: OpenAPI
+    url: openapi/vertex-vertex-api-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/vertex-get-problems-problemid-response-schema.json
+- aid: vertex:vertex-vertex-ws-api
+  name: Vertex Vertex Ws API
+  description: The Vertex Ws API from Vertex — 1 operation(s) for vertex ws.
+  humanURL: https://developer.vertexinc.com/vat-compliance/docs/upload-customer-data-files
+  baseURL: https://dash.readme.com
+  tags:
+  - Vertex Ws
+  properties:
+  - type: OpenAPI
+    url: openapi/vertex-vertex-ws-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/vertex-get-problems-problemid-response-schema.json
 x-coverage:
   state: unreadable
   reason: js-rendered-docs

@@ -1,0 +1,81 @@
+openapi: 3.2.0
+info:
+  title: Vertex API
+  version: '2026-10-13'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-13: 23 operation(s) read from 8 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Vertex has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 5
+    documentation: 18
+    pages-with-code: 8
+    pages-read: 8
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-13'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://developer.vertexinc.com/vat-compliance/docs/upload-customer-data-files
+  - https://developer.vertexinc.com/vat-compliance/docs/using-the-vat-compliance-api
+  - https://developer.vertexinc.com/oseries/docs
+  - https://developer.vertexinc.com/oseries/docs/quick-start
+  - https://developer.vertexinc.com/solutionreporting/docs/authentication
+  - https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+  - https://developer.vertexinc.com/smartcategorization/docs/authentication
+  - https://developer.vertexinc.com/smartcategorization/docs/error-handling
+servers:
+- url: https://dash.readme.com
+tags:
+- name: Vertex API
+paths:
+  /:
+    get:
+      operationId: get
+      tags:
+      - Vertex API
+      summary: GET /
+      x-source: https://developer.vertexinc.com/vat-compliance/docs/using-the-vat-compliance-api
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: httpie
+        snippet: 'HTTP https://vat-compliance-service.vertexcloud.com/ '
+  /api/v1/{v1id}:
+    get:
+      operationId: get_api_v1_v1id
+      tags:
+      - Vertex API
+      summary: Retrieve a list of report definitions, optionally filtered by template…
+      x-source: https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+      parameters:
+      - name: v1id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 3 example path(s) differing only at v1Id
+    post:
+      operationId: post_api_v1_v1id
+      tags:
+      - Vertex API
+      summary: Create a new saved report definition based on an existing template.
+      x-source: https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+      parameters:
+      - name: v1id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at v1Id

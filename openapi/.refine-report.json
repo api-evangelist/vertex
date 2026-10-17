@@ -1,0 +1,47 @@
+{
+  "provider": "vertex",
+  "sources": [
+    "_ae-authored/vertex-openapi-generated.yml"
+  ],
+  "outputs": [
+    "vertex-documents-api-openapi.yml",
+    "vertex-problems-api-openapi.yml",
+    "vertex-project-api-openapi.yml",
+    "vertex-reports-api-openapi.yml",
+    "vertex-schedules-api-openapi.yml",
+    "vertex-templates-api-openapi.yml",
+    "vertex-vertex-api-api-openapi.yml",
+    "vertex-vertex-ws-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "vertex-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "vertex-openapi-generated.yml: tagged paths GET / -> Vertex API",
+    "vertex-openapi-generated.yml: tagged paths DELETE /api/v1/reports/results/{reportresultid} -> Reports",
+    "vertex-openapi-generated.yml: tagged paths GET /api/v1/reports/results/{reportresultid} -> Reports",
+    "vertex-openapi-generated.yml: tagged paths POST /api/v1/reports/results/{reportresultid}/cancel -> Reports",
+    "vertex-openapi-generated.yml: tagged paths GET /api/v1/reports/{definitionid}/results/{reportresultid} -> Reports",
+    "vertex-openapi-generated.yml: tagged paths DELETE /api/v1/reports/{reportid} -> Reports",
+    "vertex-openapi-generated.yml: tagged paths GET /api/v1/reports/{reportid} -> Reports",
+    "vertex-openapi-generated.yml: tagged paths PUT /api/v1/reports/{reportid} -> Reports",
+    "vertex-openapi-generated.yml: tagged paths POST /api/v1/reports/{reportid}/results -> Reports",
+    "vertex-openapi-generated.yml: tagged paths DELETE /api/v1/reports/{reportid}/schedules -> Reports",
+    "vertex-openapi-generated.yml: tagged paths DELETE /api/v1/reports/{reportid}/schedules/{scheduleid} -> Reports",
+    "vertex-openapi-generated.yml: tagged paths GET /api/v1/reports/{reportid}/{id} -> Reports",
+    "vertex-openapi-generated.yml: tagged paths DELETE /api/v1/schedules/{scheduleid} -> Schedules",
+    "vertex-openapi-generated.yml: tagged paths GET /api/v1/schedules/{scheduleid} -> Schedules",
+    "vertex-openapi-generated.yml: tagged paths PUT /api/v1/schedules/{scheduleid} -> Schedules",
+    "vertex-openapi-generated.yml: tagged paths GET /api/v1/templates/{templateid} -> Templates",
+    "vertex-openapi-generated.yml: tagged paths GET /api/v1/{v1id} -> Vertex API",
+    "vertex-openapi-generated.yml: tagged paths POST /api/v1/{v1id} -> Vertex API",
+    "vertex-openapi-generated.yml: declared missing tag: Reports",
+    "vertex-openapi-generated.yml: declared missing tag: Schedules",
+    "vertex-openapi-generated.yml: declared missing tag: Templates",
+    "vertex-openapi-generated.yml: declared missing tag: Vertex API",
+    "apis.yml register: written (+8 apis, 8 total)"
+  ],
+  "skipped": []
+}

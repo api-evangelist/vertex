@@ -1,0 +1,44 @@
+openapi: 3.2.0
+info:
+  title: Vertex Ws API
+  version: '2026-10-13'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-13: 23 operation(s) read from 8 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Vertex has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 5
+    documentation: 18
+    pages-with-code: 8
+    pages-read: 8
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-13'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://developer.vertexinc.com/vat-compliance/docs/upload-customer-data-files
+  - https://developer.vertexinc.com/vat-compliance/docs/using-the-vat-compliance-api
+  - https://developer.vertexinc.com/oseries/docs
+  - https://developer.vertexinc.com/oseries/docs/quick-start
+  - https://developer.vertexinc.com/solutionreporting/docs/authentication
+  - https://developer.vertexinc.com/solutionreporting/docs/using-the-solution-reporting-api
+  - https://developer.vertexinc.com/smartcategorization/docs/authentication
+  - https://developer.vertexinc.com/smartcategorization/docs/error-handling
+servers:
+- url: https://dash.readme.com
+tags:
+- name: Vertex Ws
+paths:
+  /vertex-ws/v2/supplies:
+    get:
+      operationId: get_vertex_ws_v2_supplies
+      tags:
+      - Vertex Ws
+      summary: GET /vertex-ws/v2/supplies
+      x-source: https://developer.vertexinc.com/oseries/docs
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: httpie
+        snippet: 'HTTP https://calcconnect.vertexsmb.com/vertex-ws/v2/supplies '
