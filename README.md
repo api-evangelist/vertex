@@ -64,5 +64,117 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Vertex is a company surfaced via the API Evangelist harvest backlog (source: tag-qc) and added to the network as a stub for full-pipeline profiling.
-- https://www.vertexinc.com/
+Vertex Inc. provides tax technology software and solutions that help businesses automate global tax compliance, calculate taxes, and manage tax data across multiple jurisdictions. Their platform integrates with ERP, e‑commerce, and financial systems, offering APIs for tax calculation, filing, and reporting, enabling enterprises to streamline tax processes and reduce compliance risk.
+
+**Areas:** Company · Tax · Compliance · Automation
+
+## Vertex on APIs.io
+
+Everything profiled for Vertex is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/vertex/](https://apis.io/providers/vertex/)** — or go straight to one of the APIs or properties below.
+
+### APIs (8)
+
+- [Vertex Documents API](https://apis.io/apis/vertex/vertex-documents-api/) — The Documents API from Vertex — 1 operation(s) for documents.
+- [Vertex Problems API](https://apis.io/apis/vertex/vertex-problems-api/) — The Problems API from Vertex — 1 operation(s) for problems.
+- [Vertex Project API](https://apis.io/apis/vertex/vertex-project-api/) — The Project API from Vertex — 2 operation(s) for project.
+- [Vertex Reports API](https://apis.io/apis/vertex/vertex-reports-api/) — The Reports API from Vertex — 8 operation(s) for reports.
+- [Vertex Schedules API](https://apis.io/apis/vertex/vertex-schedules-api/) — The Schedules API from Vertex — 1 operation(s) for schedules.
+- [Vertex Templates API](https://apis.io/apis/vertex/vertex-templates-api/) — The Templates API from Vertex — 1 operation(s) for templates.
+- [Vertex Vertex API](https://apis.io/apis/vertex/vertex-vertex-api-api/) — The Vertex API API from Vertex — 2 operation(s) for vertex api.
+- [Vertex Vertex Ws API](https://apis.io/apis/vertex/vertex-vertex-ws-api/) — The Vertex Ws API from Vertex — 1 operation(s) for vertex ws.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON Schema (1)
+
+The data models the API reads and writes.
+
+- [GetProblemsProblemidResponse](https://apis.io/schemas/vertex/vertex-get-problems-problemid-response/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Vertex Context](https://apis.io/jsonld/vertex/vertex-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Vertex API Rules](https://apis.io/rules/vertex/vertex-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Vertex Domain Security](https://apis.io/security/vertex/vertex-domain-security/)
+- [Vertex Trust Center](https://apis.io/security/vertex/vertex-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.vertexinc.com/)
+- [Documentation](https://developer.vertexinc.com/)
+- [API reference](https://developer.vertexinc.com/)
+- [Support](https://www.vertexinc.com/contact-us)
+- [Compliance](https://trust.vertexinc.com/)
+- [Terms of service](https://www.vertexinc.com/terms-of-use)
+- [Privacy policy](https://www.vertexinc.com/vertex-privacy-policy)
+- [GitHub](https://github.com/vertexinc)
+- [Status](https://status.vertexinc.com/)
+
+## API Evangelist rating
+
+**Kin Score 30.1** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.4 |
+| Contract quality | 17.8 |
+| Contract governance | 22.0 |
+| Operational transparency | 21.1 |
+| Developer ergonomics | 21.4 |
+| Access clarity | 36.8 |
+
+**Agent readiness 32.7** — agent-ready
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | documented (partial credit) |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/vertex/](https://apis.io/providers/vertex/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Vertex: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/vertex/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
